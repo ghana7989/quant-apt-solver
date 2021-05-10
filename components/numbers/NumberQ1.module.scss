@@ -1,0 +1,32 @@
+/** @format */
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 2rem 10rem;
+}
+
+.question {
+	input {
+		width: 10rem;
+	}
+}
+
+.answer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 3rem;
+	h2 {
+		margin-right: 3rem;
+	}
+	input {
+		width: 10rem;
+		height: 4rem;
+		background: #ffc2b4;
+		border: 1px solid #000000;
+		border-radius: 5px;
+		font-size: 3rem;
+	}
+}

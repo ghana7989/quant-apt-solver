@@ -23,13 +23,7 @@ export default function Home() {
 			<Container className={styles.container}>
 				<Row className={styles.row}>
 					{questionTypes
-						.filter(questionType => {
-							if (query.length <= 2) {
-								return questionType
-							} else {
-								return questionType.title.toLowerCase().includes(query.toLowerCase())
-							}
-						})
+						.filter(questionType => questionType.title.toLowerCase().includes(query.toLowerCase()))
 						.map(questionType => {
 							return (
 								<Col key={questionType.key} className={styles.item} xs={6} md={4} lg={3}>
