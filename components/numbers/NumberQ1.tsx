@@ -3,6 +3,7 @@
 import React from 'react'
 import {useEffect} from 'react'
 import {useState} from 'react'
+import {Container} from 'react-bootstrap'
 import {getRemainder} from '../../utils/mathFunctions'
 import styles from './NumberQ1.module.scss'
 
@@ -38,7 +39,7 @@ const NumberQ1 = () => {
 		getResult(a, b)
 	}, [a, b, result])
 	return (
-		<div className={styles.container}>
+		<Container fluid='sm'>
 			<div className={styles.question}>
 				<h1>
 					Q1. Find the unit digit of (
@@ -54,7 +55,7 @@ const NumberQ1 = () => {
 					<input value={result} type='text' readOnly />
 				</div>
 			)}
-		</div>
+		</Container>
 	)
 }
 

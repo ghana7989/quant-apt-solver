@@ -1,15 +1,14 @@
 /** @format */
 
-.container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	margin: 2rem 10rem;
-}
-
 .question {
+	width: 100%;
 	input {
 		width: 10rem;
+	}
+	@media (max-width: 700px) {
+		h1 {
+			font-size: 2rem;
+		}
 	}
 }
 
